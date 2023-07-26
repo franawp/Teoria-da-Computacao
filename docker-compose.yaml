@@ -44,3 +44,12 @@ services:
       - postgres_data:/var/lib/postgresql/data
     networks:
       - my-network
+  # RABBIT MQ
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitMQ
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - my-network

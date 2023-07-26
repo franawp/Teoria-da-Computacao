@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: manage-fastapi
+Version: 1.1.1
+Summary: Managing FastAPI projects made easy.
+Home-page: https://github.com/ycd/manage-fastapi
+License: MIT
+Author: ycd
+Author-email: yagizcanilbey1903@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: cookiecutter (>=1.7.2,<2.0.0)
+Requires-Dist: pydantic[email] (>=1.7.2,<2.0.0)
+Requires-Dist: questionary (>=1.10.0,<2.0.0)
+Requires-Dist: typer (>=0.4.0,<0.5.0)
+Project-URL: Repository, https://github.com/ycd/manage-fastapi
+Description-Content-Type: text/markdown
+
+<div align="center">
+<h1>manage-fastapi</h1>
+
+[manage-fastapi](https://github.com/ycd/manage-fastapi) Project generator and manager for FastAPI
+
+
+![manage_fastapi](assets/manage_fastapi.gif)
+
+<p align="center">
+    <a href="https://github.com/ycd/manage-fastapi" target="_blank">
+        <img src="https://img.shields.io/github/last-commit/ycd/manage-fastapi?style=for-the-badge" alt="Latest Commit">
+    </a>
+        <img src="https://img.shields.io/github/workflow/status/ycd/manage-fastapi/Test?style=for-the-badge">
+        <img src="https://img.shields.io/codecov/c/github/ycd/manage-fastapi?style=for-the-badge">
+    <br />
+    <a href="https://pypi.org/project/manage-fastapi" target="_blank">
+        <img src="https://img.shields.io/pypi/v/manage-fastapi?style=for-the-badge" alt="Package version">
+    </a>
+    <img src="https://img.shields.io/pypi/pyversions/manage-fastapi?style=for-the-badge">
+    <img src="https://img.shields.io/github/license/ycd/manage-fastapi?style=for-the-badge">
+</p>
+</div>
+
+
+---
+
+**Source Code**: View it on [Github](https://github.com/ycd/manage-fastapi/)
+
+---
+
+
+##  Features 🚀
+
+* #### Creates customizable **project boilerplate.**
+* #### Creates customizable **app boilerplate.**
+* #### Handles the project structuring for you.
+* #### Optional Dockerfile generation.
+* #### Optional docker-compose generation for your project needs.
+* #### Optional pre-commit hook generation.
+
+
+## Installation 📌
+
+* Prerequisites
+    * Python 3.6 +
+
+Manage FastAPI can be installed by running 
+
+```python
+pip install manage-fastapi 
+```
+
+
+## Getting started 🎈
+
+Easiest way to start is using the defaults:
+
+```bash
+fastapi startproject [name]
+```
+
+But there is an **interactive** mode!
+
+```bash
+fastapi startproject [name] --interactive
+```
+
+
+
+## Command line options 🧰
+
+Manage FastAPI provides three different commands. 
+
+You can list them with
+
+```bash
+fastapi --help
+```
+
+<img src="docs/docs_assets/fastapi-help.png" width=600>
+
+The idea is to have a highly customizable CLI, but at the same time a simple interface for new users. You can see the available options for `startproject` running `fastapi startproject --help`:
+
+<img src="docs/docs_assets/startproject-help.png" width=600>
+
+The other commands are already available but the current implementation is too shallow. More details about `startapp` and `run` commands will be provided once they have more functionalities, at the moment you can run `startapp` by just:
+
+```bash
+fastapi startapp {name}
+```
+
+On the other hand, the `run` command expects you to have a `startproject` structure:
+
+```bash
+fastapi run
+```
+
+## License
+
+This project is licensed under the terms of the MIT license.
+
